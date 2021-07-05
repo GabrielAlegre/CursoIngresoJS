@@ -1,6 +1,19 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");
+ let numAleatorio;
+ 
+ numAleatorio= Math.floor(Math.random()*10)+1;
 
-}//FIN DE LA FUNCIÓN
+ if (numAleatorio >=9){
+
+ 	alert("EXCELENTE, usted se saco un "+ numAleatorio);
+ }
+ else if (numAleatorio>=4 && numAleatorio<9){
+
+ 	alert("APROBO, usted se saco un "+ numAleatorio);
+ }
+ else {
+
+ 	alert("Vamos, la proxima se puede. Usted se saco un "+ numAleatorio);
+ }
+}
