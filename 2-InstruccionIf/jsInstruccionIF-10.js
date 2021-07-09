@@ -1,19 +1,19 @@
 function mostrar()
 {
- let numAleatorio;
+ let numeroAleatorio;
  
- numAleatorio= Math.floor(Math.random()*10)+1;
+ numeroAleatorio=Math.floor(Math.random()*10)+1;
 
- if (numAleatorio >=9){
+ if (numeroAleatorio>=9){
 
- 	alert("EXCELENTE, usted se saco un "+ numAleatorio);
+ 	alert("EXCELENTE, usted se saco un "+numeroAleatorio);
  }
- else if (numAleatorio>=4 && numAleatorio<9){
+ else if (numeroAleatorio>=4 && numeroAleatorio<9){
 
- 	alert("APROBO, usted se saco un "+ numAleatorio);
+ 	alert("APROBO, usted se saco un "+numeroAleatorio);
  }
  else {
 
- 	alert("Vamos, la proxima se puede. Usted se saco un "+ numAleatorio);
+ 	alert("Vamos, la proxima se puede. Usted se saco un "+numeroAleatorio);
  }
 }

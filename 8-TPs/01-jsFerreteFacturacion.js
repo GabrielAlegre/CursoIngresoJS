@@ -1,45 +1,72 @@
-/*1.	Para el departamento de facturación:
+/*
+autor: Gabriel Alegre
+enunciado TP1:
+1.	Para el departamento de facturación:
 A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-  let precio1, precio, precio3, suma;
+  let precioUno;
+  let precioDos;
+  let precioTres;
+  let suma;
 
-  precio1= parseInt(document.getElementById("txtIdPrecioUno").value);
-  precio2= parseInt(document.getElementById("txtIdPrecioDos").value);
-  precio3= parseInt(document.getElementById("txtIdPrecioTres").value);
+  precioUno=document.getElementById("txtIdPrecioUno").value;
+  precioDos=document.getElementById("txtIdPrecioDos").value;
+  precioTres=document.getElementById("txtIdPrecioTres").value;
 
-  suma= precio1+precio2+precio3;
+  precioUno=parseInt(precioUno);
+  precioDos=parseInt(precioDos);
+  precioTres=parseInt(precioTres);
 
-  alert("la suma de los precio es: "+ suma);
+  suma=precioUno+precioDos+precioTres;
+
+  alert("la suma de los precio es: "+suma);
 }
 
 function Promedio () 
 {
-  let precio1, precio, precio3, promedio;
+  let precioUno;
+  let precioDos;
+  let precioTres;
+  let promedio;
 
-  precio1= parseInt(document.getElementById("txtIdPrecioUno").value);
-  precio2= parseInt(document.getElementById("txtIdPrecioDos").value);
-  precio3= parseInt(document.getElementById("txtIdPrecioTres").value);
+  precioUno=document.getElementById("txtIdPrecioUno").value;
+  precioDos=document.getElementById("txtIdPrecioDos").value;
+  precioTres=document.getElementById("txtIdPrecioTres").value;
+  
+  precioUno=parseInt(precioUno);
+  precioDos=parseInt(precioDos);
+  precioTres=parseInt(precioTres);
 
-  promedio= (precio1+precio2+precio3)/3;
 
-  alert("El promedio es: "+ promedio);
+  promedio=(precioUno+precioDos+precioTres)/3;
+
+  alert("El promedio es: "+promedio);
 }
 
 function PrecioFinal () 
 {
-  let precio1, precio, precio3, precioTotal, iva, precioFinal;
+  let precioUno;
+  let precioDos;
+  let precioTres;
+  let precioSuma;
+  let iva;
+  let precioFinal;
 
-  precio1= parseInt(document.getElementById("txtIdPrecioUno").value);
-  precio2= parseInt(document.getElementById("txtIdPrecioDos").value);
-  precio3= parseInt(document.getElementById("txtIdPrecioTres").value);
+  precioUno=document.getElementById("txtIdPrecioUno").value;
+  precioDos=document.getElementById("txtIdPrecioDos").value;
+  precioTres=document.getElementById("txtIdPrecioTres").value;
   
-  precioTotal= precio1+precio2+precio3;
-  iva= precioTotal*0.21;
-  precioFinal= precioTotal + iva;
+  precioUno=parseInt(precioUno);
+  precioDos=parseInt(precioDos);
+  precioTres=parseInt(precioTres);
+  
+  precioTotal= precioUno+precioDos+precioTres;
+  iva=(precioTotal*21)/100;
+  precioFinal=precioTotal+iva;
 
-  alert("El precio final por los 3 productos mas IVA es de: "+ precioFinal);
+  alert("El precio final por los tres productos mas IVA agregada es de: "+precioFinal);
 }

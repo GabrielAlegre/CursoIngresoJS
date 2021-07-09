@@ -1,19 +1,23 @@
 /*
+autor: Gabriel Alegre
+enunciado ejr06:
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-  let num1, num2, suma;
+  let numeroUno;
+  let numeroDos;
+  let suma;
+  
+  numeroUno=document.getElementById("txtIdNumeroUno").value;
+  numeroDos=document.getElementById("txtIdNumeroDos").value;
 
-  num1= document.getElementById("txtIdNumeroUno").value;
-  num2= document.getElementById("txtIdNumeroDos").value;
+  numeroUno=parseInt(numeroUno);
+  numeroDos=parseInt(numeroDos);
 
-  num1= parseInt(num1);
-  num2= parseInt(num2);
+  suma=numeroUno+numeroDos;
 
-  suma= num1+num2;
-
-  alert("El resultado de la suma es: "+ suma);
+  alert("La suma es: "+suma);
 }
 

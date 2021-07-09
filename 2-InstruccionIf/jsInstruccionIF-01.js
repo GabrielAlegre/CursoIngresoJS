@@ -1,12 +1,17 @@
+/*
+autor: Gabriel Alegre
+enunciado ejercicio if 1:
+Al ingresar una edad que sea igual a 15, mostrar el mensaje "niña bonita".
+*/
 function mostrar()
 {
-  let edad;
+    let edad;
 
-  edad= parseInt(document.getElementById("txtIdEdad").value);
+    edad=document.getElementById("txtIdEdad").value;
+    edad=parseInt(edad);
 
-  if(edad==15){
+    if(edad==15){
 
-  alert("Niña bonita");
- }
- 
+    alert("Niña bonita");
+    }
 }
